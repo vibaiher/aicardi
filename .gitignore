@@ -1,0 +1,4 @@
+/vendor/
+.vagrant/
+*.swp
+*.DS_Store
