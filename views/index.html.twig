@@ -1,0 +1,135 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Aicardi - Trio acústico</h2>
+						</header>
+						<p>Aircardi es un grupo de música acústico formado por Quique (guitarra), Juan (percusión) y Elena (voz y teclado).</p>
+						<ul class="actions">
+							<li><a href="/sobre-nosotros" class="button">¡Quiero saber más!</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Próximos conciertos</h2>
+						<div class="row">
+							<article class="12u work-item row">
+                <header class="3u">
+                  <a href="{{ asset('/images/cafe_cronopio.jpg') }}" class="image fit thumb"><img src="{{ asset('/images/cafe_cronopio_thumb.jpg') }}" alt="" /></a>
+                </header>
+                <div class="9u">
+                  <h2>Café Cronopio</h2>
+                  <time datetime="2015-10-30 21:00 UTC+1">30 de noviembre de 2015 a las 21:30</time>
+                  <p>¡Hola a todas/os! Nuestras amigas de Café Cronopio nos propusieron que amenizáramos su próxima cena macrobiótica y allá que vamos. El próximo jueves 19 de noviembre a las 21:30 estaremos tocando allí tanto para las/os que deseéis uniros a la cena como para aquellas/os que simplemente queráis tomar algo mientras nos escucháis. Un regalo para vuestros oídos y para vuestros estómagos. ¡Os esperamos!</p>
+                </div>
+							</article>
+							<article class="12u work-item row">
+                <header class="3u">
+                  <a href="{{ asset('/images/loca_bohemia.jpg') }}" class="image fit thumb"><img src="{{ asset('/images/loca_bohemia_thumb.jpg') }}" alt="" /></a>
+                </header>
+                <div class="9u">
+                  <h2>Loca Bohemia Café Bar</h2>
+                  <time datetime="2015-10-19 23:00 UTC+1">19 de noviembre de 2015 a las 23:00</time>
+                  <p>Ya estamos de vuelta con alegría e ilusión de ofreceros otro super concierto en directo!!! Venga, animaos a venir el día 30 de Octubre a vernos! Pasaréis una noche genial con buena música y compañía en el Café Bar Loca Bohemia!</p>
+                </div>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="/conciertos" class="button">Ver todos los conciertos</a></li>
+						</ul>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Últimos vídeos</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+                <video id="my-video" class="video-js image fit vjs-big-play-centered" controls preload="auto" height="217" poster="{{ asset('/thumbnails/pet_sematary.jpg') }}" data-setup="{}">
+                  <source src="{{ asset('/videos/pet_sematary.mp4') }}" type='video/mp4'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+								<h3>Pet sematary</h3>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+                <video id="my-video" class="video-js image fit vjs-big-play-centered" controls preload="auto" height="217" poster="{{ asset('/thumbnails/yo_no_soy_el_manager.jpg') }}" data-setup="{}">
+                  <source src="{{ asset('/videos/yo_no_soy_el_manager.mp4') }}" type='video/mp4'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+								<h3>Yo no soy el manager</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+                <video id="my-video" class="video-js image fit vjs-big-play-centered" controls preload="auto" height="217" poster="{{ asset('/thumbnails/pajaritos.jpg') }}" data-setup="{}">
+                  <source src="{{ asset('/videos/pajaritos.mp4') }}" type='video/mp4'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+								<h3>Pajaritos</h3>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+                <video id="my-video" class="video-js image fit vjs-big-play-centered" controls preload="auto" height="217" poster="{{ asset('/thumbnails/como_quieras.jpg') }}" data-setup="{}">
+                  <source src="{{ asset('/videos/como_quieras.mp4') }}" type='video/mp4'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+                </video>
+								<h3>Como Quieras</h3>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Ver todos los vídeos</a></li>
+						</ul>
+					</section>
+
+				<!-- Four -->
+					<section id="four">
+						<h2>Contacto</h2>
+						<p>¿Quieres que toquemos para ti? ¿Quieres simplemente decirnos hola? ¡Rellena el formulario y te contestaremos lo antes posible!</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nombre" /></div>
+										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Escribe aquí..." rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Enviar mensaje" /></li>
+								</ul>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Teléfono</span></h3>
+										625 435 331
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Teléfono</span></h3>
+										667 887 998
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Teléfono</span></h3>
+										655 789 312
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="#">contacto@aicardi.music</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+          </section>
+{% endblock %}

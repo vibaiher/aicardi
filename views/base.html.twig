@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Aicardi | Música en acústico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="{{ asset('/scripts/ie/html5shiv.js') }}"></script><![endif]-->
+    <link rel="stylesheet" href="{{ asset('/styles/main.css') }}" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('/styles/ie8.css') }}" /><![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/favicon/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('/favicon/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+    <link href="http://vjs.zencdn.net/5.3.0/video-js.css" rel="stylesheet">
+    <!--[if lte IE 8]><script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+        <a href="/" class="logo"><img src="{{ asset('/images/aicardi.png') }}" alt="Logo Aicardi" width="100%" /></a>
+        <h1>¡Hola! Somos <strong>Aicardi</strong>.<br />
+          Un grupo de música acústico formado por Quique, Juan y Elena.<br />
+          <strong>Nos encanta la música y queremos compartirla contigo</strong>.</h1>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+        {% block content %}{% endblock %}
+      </div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/trioaicardi" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/Aicardi-1719168394976480/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="mailto:contacto@aicardi.music" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+          <li>Aicardi &copy; {{ "now"|date("Y") }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+    <script src="{{ asset('/scripts/jquery.min.js') }}"></script>
+    <script src="{{ asset('/scripts/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ asset('/scripts/skel.min.js') }}"></script>
+    <script src="{{ asset('/scripts/util.js') }}"></script>
+    <!--[if lte IE 8]><script src="{{ asset('/scripts/ie/respond.min.js') }}"></script><![endif]-->
+    <script src="{{ asset('/scripts/main.js') }}"></script>
+    <script src="http://vjs.zencdn.net/5.3.0/video.js"></script>
+	</body>
+</html>

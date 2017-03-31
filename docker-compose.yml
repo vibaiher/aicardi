@@ -1,0 +1,14 @@
+version: '2'
+services:
+  aicardi:
+    build: .
+    volumes:
+      - .:/aicardi
+      - vendor:/aicardi/vendor
+    ports:
+      - "8000:8000"
+    command: bash -c "composer install -o && php -S 0.0.0.0:8000"
+
+volumes:
+  vendor:
+    driver: local

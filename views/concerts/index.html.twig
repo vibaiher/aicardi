@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+  <h1>Todos los conciertos de Aicardi</h1>
+  <div class="row">
+    <article class="12u work-item row">
+      <header class="3u">
+        <a href="{{ asset('/images/cafe_cronopio.jpg') }}" class="image fit thumb"><img src="{{ asset('/images/cafe_cronopio_thumb.jpg') }}" alt="" /></a>
+      </header>
+      <div class="9u">
+        <h2><span style="color: red;">¡Nuevo!</span> Café Cronopio</h2>
+        <time datetime="2015-10-30 21:00 UTC+1">30 de noviembre de 2015 a las 21:30</time>
+        <p>¡Hola a todas/os! Nuestras amigas de Café Cronopio nos propusieron que amenizáramos su próxima cena macrobiótica y allá que vamos. El próximo jueves 19 de noviembre a las 21:30 estaremos tocando allí tanto para las/os que deseéis uniros a la cena como para aquellas/os que simplemente queráis tomar algo mientras nos escucháis. Un regalo para vuestros oídos y para vuestros estómagos. ¡Os esperamos!</p>
+      </div>
+    </article>
+    <article class="12u work-item row">
+      <header class="3u">
+        <a href="{{ asset('/images/loca_bohemia.jpg') }}" class="image fit thumb"><img src="{{ asset('/images/loca_bohemia_thumb.jpg') }}" alt="" /></a>
+      </header>
+      <div class="9u">
+        <h2>Loca Bohemia Café Bar</h2>
+        <time datetime="2015-10-19 23:00 UTC+1">19 de noviembre de 2015 a las 23:00</time>
+        <p>Ya estamos de vuelta con alegría e ilusión de ofreceros otro super concierto en directo!!! Venga, animaos a venir el día 30 de Octubre a vernos! Pasaréis una noche genial con buena música y compañía en el Café Bar Loca Bohemia!</p>
+      </div>
+    </article>
+    <article class="12u work-item row">
+      <header class="3u">
+        <a href="{{ asset('/images/el_volander.jpg') }}" class="image fit thumb"><img src="{{ asset('/images/el_volander_thumb.jpg') }}" alt="Cartel concierto 'El Volander'" /></a>
+      </header>
+      <div class="9u">
+        <h2>El Volander</h2>
+        <time datetime="2015-04-25 21:30 UTC+1">25 de abril de 2015 a las 21:30</time>
+        <p>Nuestro concierto de presentación tendrá lugar en el pub El Volander de València (C/ Poeta Navarro Cabanes, 25) y esperamos contar con vuestra presencia. ¿Qué os encontraréis allí? A un trío acústico con ganas de darlo todo y con un repertorio de temas propios que mezcla momentos intimistas con guiños al blues y rasgueos rumberos de guitarra con pinceladas naïf. Un set list de canciones frescas y sin pretensiones aderezado con alguna sorpresa en forma de versión que no os podéis perder.</p>
+        <p>Os esperamos para hacer de Aicardi algo grande. ¡Solo con vuestra ayuda será posible!</p>
+      </div>
+    </article>
+  </div>
+{% endblock %}
