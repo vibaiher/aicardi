@@ -5,6 +5,11 @@ require_once __DIR__.'/vendor/autoload.php';
 $app = new Silex\Application();
 $app['debug'] = true;
 
+# Register monolog
+$app->register(new Silex\Provider\MonologServiceProvider(), array(
+    'monolog.logfile' => __DIR__.'/logs/aicardi.log',
+));
+
 # Register twig and 'assets' helper
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__ . '/views',
